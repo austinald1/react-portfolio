@@ -10,9 +10,7 @@ import {
   useParams
 } from "react-router-dom";
 
-
 import { Container, Navbar, Nav } from 'react-bootstrap';
-
 
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
@@ -21,22 +19,22 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Header></Header>
+      <Header></Header>
         <Container>
-            {/* The content that renders will be managed by Switch */}
-                <Switch>
-                    <Route path="/about-me">
-                      <AboutMe />
-                    </Route>
-                    <Route path="/portfolio">
-                    </Route>
-                    <Route path="/">
-                    </Route>
-                </Switch>
+            <Router>
+                  {/* The content that renders will be managed by Switch */}
+                      <Switch>
+                          <Route path="/about-me">
+                            <AboutMe />
+                          </Route>
+                          <Route path="/portfolio">
+                          </Route>
+                          <Route path="/">
+                          </Route>
+                      </Switch>
+            </Router>
           </Container>
         <Footer></Footer>
-      </Router>
     </div>
   );
 }

@@ -36,3 +36,121 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  box-sizing: border-box;
+}
+
+/* Portfolio STYLE */
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Banner section CSS  */
+.banner {
+  padding: 60px;
+  text-align: center;
+  background: #fabc60;
+  color: black;
+  background-image: url("assets/img/banner-3.jpg");
+  background-size: 900px 200px;
+  background-repeat: no-repeat;
+}
+
+/* Navigation section CSS  */
+.navigation {
+  background-color: #62dde1;
+  display: flex;
+}
+
+.navigation a {
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation a:hover {
+  color: black;
+}
+
+/* Section for the About me and personal details */
+
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leftSection {
+  padding: 20px;
+  background-color: #f1f1f1;
+  flex: 30%;
+}
+
+.rightSection {
+  padding: 20px;
+  background-color: white;
+  flex: 70%;
+}
+
+.image {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Project Section that I've completed  */
+
+.projects {
+  font-size: 1.5rem;
+  padding: 45px;
+  text-align: center;
+  background: #fabc60;
+  color: black;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.bodyContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #caf7e3;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 1rem; */
+}
+
+.responsive_image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+.footerContainer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: #e4bad4;
+  background-color: #3e3e41;
+}
+
+@media screen and (max-width: 700px) {
+  .aboutContainer,
+  .navigation,
+  .cardContainer {
+    flex-direction: column;
+  }
+}

@@ -4,14 +4,14 @@ import { Container, Navbar, Nav, NavItem } from 'react-bootstrap';
 
 function Footer(){
     return (
-        <Navbar expand="md" bg="primary" id="navbar" sticky="top" className="shadow-sm">
-        <hr></hr>
-        {/* <Container> */}
-            <Nav className="me-auto" >
-                <NavItem>Copyright (C) Austin</NavItem>
-            </Nav>
-        {/* </Container> */}
-        </Navbar>
+        <Container className="footerContainer">
+           <div> Copyright (C) Austin</div>
+           <div>
+                <a target="_blank" href="https://github.com/austinald1">
+                    <i className="fab fa-github">GITHUB</i>
+                </a>
+            </div>
+        </Container>
     );
 }
 
