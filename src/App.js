@@ -20,16 +20,17 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-        <Container>
+        <Container className="Content">
             <Router>
                   {/* The content that renders will be managed by Switch */}
                       <Switch>
+                          <Route path="/">
+                            <AboutMe />
+                          </Route>
                           <Route path="/about-me">
                             <AboutMe />
                           </Route>
                           <Route path="/portfolio">
-                          </Route>
-                          <Route path="/">
                           </Route>
                       </Switch>
             </Router>

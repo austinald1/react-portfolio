@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+.Content {
+  min-height: 500px;
+  background-color: #83e79c;
+  width: 100%;
+}
+
+.rp-Carousel {
+  width: 100%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -21,7 +31,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -46,6 +55,7 @@
 body {
   font-family: Arial;
   margin: 0;
+  background-color: #3e3e41;
 }
 
 /* Banner section CSS  */
@@ -55,8 +65,11 @@ body {
   background: #fabc60;
   color: black;
   background-image: url("assets/img/banner-3.jpg");
-  background-size: 900px 200px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  width: 100%;
+  max-width: 100%;;
+  height: auto;
 }
 
 /* Navigation section CSS  */
@@ -83,18 +96,6 @@ body {
   flex-wrap: wrap;
 }
 
-.leftSection {
-  padding: 20px;
-  background-color: #f1f1f1;
-  flex: 30%;
-}
-
-.rightSection {
-  padding: 20px;
-  background-color: white;
-  flex: 70%;
-}
-
 .image {
   background-color: #aaa;
   width: 100%;
@@ -117,7 +118,6 @@ body {
 
 .bodyContainer {
   display: flex;
-  flex-direction: column;
 }
 
 .cardContainer {
@@ -141,10 +141,14 @@ body {
 
 .footerContainer {
   color: white;
-  display: flex;
-  flex-direction: column;
   background-color: #e4bad4;
   background-color: #3e3e41;
+  font-size: large;
+  padding: 25px;
+}
+
+.footerLink {
+  margin-top: 25px;
 }
 
 @media screen and (max-width: 700px) {
@@ -153,4 +157,8 @@ body {
   .cardContainer {
     flex-direction: column;
   }
+}
+
+.rp-margin-1 {
+  margin: 10px;
 }
