@@ -50,12 +50,53 @@ class AboutMe extends React.PureComponent {
             <h1>About Me</h1>
         </Row>
         <Row>
+            <Col span={12} style={{ marginTop: 20 }}>
+                <RBCarousel
+                className="rp-Carousel"
+                animation={true}
+                autoplay={this.state.autoplay}
+                slideshowSpeed={2000}
+                defaultActiveIndex={0}
+                leftIcon={this.state.leftIcon}
+                rightIcon={this.state.rightIcon}
+                onSelect={this._onSelect}
+                ref={this.slider}
+                >
+                <div style={{ height: 500 }}>
+                    <img
+                    style={{ width: "100%", height: "100%" }}
+                    src={CarouselImage1}
+                    />
+                    <div className="carousel-caption">Image</div>
+                </div>
+                <div style={{ height: 500 }}>
+                    <img
+                    style={{ width: "100%", height: "100%" }}
+                    src={CarouselImage2}
+                    />
+                    <div className="carousel-caption">Image</div>
+                </div>
+                <div style={{ height: 500 }}>
+                    <img
+                    style={{ width: "100%", height: "100%" }}
+                    src={CarouselImage3}
+                    />
+                    <div className="carousel-caption">Image</div>
+                </div>
+                <div style={{ height: 500 }}>
+                    <img
+                    style={{ width: "100%", height: "100%" }}
+                    src={CarouselImage4}
+                    />
+                    <div className="carousel-caption">Image</div>
+                </div>
+                </RBCarousel>
+            </Col>
+            </Row>
+            <Row>
 
-        </Row>
-        <Row>
-
-        </Row>
-      </div>
+            </Row>
+        </div>
     );
     }
 }

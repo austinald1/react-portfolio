@@ -14,7 +14,10 @@ import { Container, Navbar, Nav } from 'react-bootstrap';
 
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Resume from './components/Resume';
 
 function App() {
   return (
@@ -24,13 +27,20 @@ function App() {
             <Router>
                   {/* The content that renders will be managed by Switch */}
                       <Switch>
-                          <Route path="/">
-                            <AboutMe />
-                          </Route>
                           <Route path="/about-me">
                             <AboutMe />
                           </Route>
                           <Route path="/portfolio">
+                            <Portfolio />
+                          </Route>
+                          <Route path="/contact">
+                            <Contact />
+                          </Route>
+                          <Route path="/resume">
+                            <Resume />
+                          </Route>
+                          <Route path="/">
+                            <AboutMe />
                           </Route>
                       </Switch>
             </Router>

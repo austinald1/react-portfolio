@@ -10,7 +10,7 @@ function Header(){
             </div>
             <Navbar expand="md" bg="" id="navbar" sticky="top" className="shadow-sm navigation">
                 {/* <Container> */}
-                <Nav className="me-auto" >
+                <Nav className="me-auto justify-content-center" >
                     <Nav.Link className="linkText" href="/about-me" to="/about-me">About Me</Nav.Link>
                     <Nav.Link className="linkText" href="/portfolio" to="/portfolio">Portfolio</Nav.Link>
                     <Nav.Link className="linkText" href="/contact" to="/contact">Contact</Nav.Link>

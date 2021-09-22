@@ -4,7 +4,7 @@
 
 .Content {
   min-height: 500px;
-  background-color: #83e79c;
+  background-color: #3e3e41;
   width: 100%;
 }
 
@@ -74,7 +74,7 @@ body {
 
 /* Navigation section CSS  */
 .navigation {
-  background-color: #62dde1;
+  background-color: #c9cfcf;
   display: flex;
 }
 
@@ -83,6 +83,7 @@ body {
   padding: 14px 20px;
   text-decoration: none;
   color: white;
+  font-size: large;
 }
 
 .navigation a:hover {
