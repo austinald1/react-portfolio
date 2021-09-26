@@ -4,7 +4,6 @@
 
 .Content {
   min-height: 500px;
-  background-color: #3e3e41;
   width: 100%;
 }
 
@@ -55,7 +54,7 @@
 body {
   font-family: Arial;
   margin: 0;
-  background-color: #3e3e41;
+  /* background-color: #a1a1c9; */
 }
 
 /* Banner section CSS  */
@@ -64,18 +63,27 @@ body {
   text-align: center;
   background: #fabc60;
   color: black;
-  background-image: url("assets/img/banner-3.jpg");
+  background-image: url("assets/img/banner-5.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
   max-width: 100%;;
   height: auto;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-weight: bolder;
+}
+
+.banner-overlay {
+  background-color: #ffffff;
+  opacity: 0.75;
+  width:100%;
 }
 
 /* Navigation section CSS  */
 .navigation {
   background-color: #c9cfcf;
   display: flex;
+  font-size: x-large;
 }
 
 .navigation a {
@@ -83,7 +91,6 @@ body {
   padding: 14px 20px;
   text-decoration: none;
   color: white;
-  font-size: large;
 }
 
 .navigation a:hover {
@@ -142,8 +149,8 @@ body {
 
 .footerContainer {
   color: white;
-  background-color: #e4bad4;
-  background-color: #3e3e41;
+  background-color: #bae4e4;
+  background-color: #bae4e4;
   font-size: large;
   padding: 25px;
 }
@@ -162,4 +169,7 @@ body {
 
 .rp-margin-1 {
   margin: 10px;
+}
+
+.about-me-content {
 }

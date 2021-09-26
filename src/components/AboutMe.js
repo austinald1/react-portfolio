@@ -19,7 +19,7 @@ class AboutMe extends React.PureComponent {
     super(props);
     this.slider = React.createRef();
     this.state = {
-        autoplay: true,
+        autoplay: true
     };
     }
     _onSelect = (active, direction) => {
@@ -44,10 +44,14 @@ class AboutMe extends React.PureComponent {
     };
     
     render() {
+    document.body.style.backgroundColor = "#bae4e4";
     return (
-        <div className="container-fluid" style={{ paddingBottom: 20 }}>
+        <div className="container-fluid about-me-content" style={{ paddingBottom: 20 }}>
         <Row>
             <h1>About Me</h1>
+        </Row>
+        <Row>
+            This is information about me.
         </Row>
         <Row>
             <Col span={12} style={{ marginTop: 20 }}>
@@ -92,9 +96,6 @@ class AboutMe extends React.PureComponent {
                 </div>
                 </RBCarousel>
             </Col>
-            </Row>
-            <Row>
-
             </Row>
         </div>
     );

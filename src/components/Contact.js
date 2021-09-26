@@ -1,6 +1,7 @@
 import React from "react";
 
 function Contact(){
+    document.body.style.backgroundColor = "#eca396";
     return (
         <div>
             <h1>Robert Austin Alderete</h1>

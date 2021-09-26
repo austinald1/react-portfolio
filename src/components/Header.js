@@ -6,7 +6,7 @@ function Header(){
     return (
         <header>
             <div class="banner">
-                <h2>Austin Alderete</h2>
+            <div className="banner-overlay"><h2>Austin Alderete</h2></div>
             </div>
             <Navbar expand="md" bg="" id="navbar" sticky="top" className="shadow-sm navigation">
                 {/* <Container> */}
