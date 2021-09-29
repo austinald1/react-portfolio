@@ -51,7 +51,7 @@ class AboutMe extends React.PureComponent {
             <h1>About Me</h1>
         </Row>
         <Row>
-            This is information about me.
+            I am a full stack developer. I also have many years of commercial construction industry. I enjoy long walks on the beach.
         </Row>
         <Row>
             <Col span={12} style={{ marginTop: 20 }}>
